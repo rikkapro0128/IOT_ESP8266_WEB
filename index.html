@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./tailwind.config.js"></script>
+  <script src="./app.js"></script>
+</head>
+
+<body class="select-none">
+  <header>
+    <nav>
+      <div class="nav-wrapper flex justify-left items-center ml-10">
+        <span href="#" class="inline-block text-center text-4xl leading-loose cursor-pointer">Miru IOT</span>
+        <div class="w-fit h-full inline-block">
+          <img class="object-cover w-full h-full relative bottom-1" src="./img/logo.gif" alt="logo-website">
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="antialiased ml-10 mr-10">
+    <div class="text-black-400 mt-5">
+      <h1 class="text-2xl">Giá trị cảm biến ghi nhận</h1>
+    </div>
+    <div class="grid h-60 mt-5 grid-cols-2 gap-4 justify-self-center">
+      <div
+        class="text-slate-50 cursor-pointer w-60 temperature flex justify-self-end justify-center items-center flex-col border shadow-emerald-500/50 shadow-lg rounded bg-emerald-500 border-0	">
+        <span class="capitalize font-semibold	text-2xl	">nhiệt độ</span>
+        <span class="text-xl">35'C</span>
+      </div>
+      <div
+        class="text-slate-50 cursor-pointer humi w-60 flex justify-center items-center flex-col border rounded bg-cyan-500 shadow-lg shadow-cyan-500/50 border-0	">
+        <span class="capitalize font-semibold	text-2xl	">độ ẩm</span>
+        <span class="text-xl">70%</span>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
